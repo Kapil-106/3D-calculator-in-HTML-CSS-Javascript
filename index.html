@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid in CSS</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: auto auto auto auto ;
+            grid-gap: 10px 10px;
+            background-color: blue;
+            padding: 20px;
+            width: 50%;
+            margin: auto;
+
+        }
+
+        .container >div{
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+        
+        .items{
+            border: 12px outset #bebeee;
+        }
+
+        .input{
+        grid-area: 1 / 1 /span 1 / span 4;
+       
+        
+       }
+
+
+
+        .c {
+            grid-area: 2 / 1 / span 1 / span 2;
+            
+            
+            
+        }
+        .del{
+            grid-area: 2 / 3 / span 1 / span 2;
+            
+            
+            
+        }
+        .seven{
+            grid-area: 3 / 1 ;
+           
+        }
+        .eight{
+            grid-area: 3 / 2 ;
+            
+        }
+        .nine{
+            grid-area: 3 / 3 ;
+            
+        }
+        .div{
+            grid-area: 3 / 4 ;
+           
+        }
+        .four{
+            grid-area: 4 / 1 ;
+            
+        }
+        .five{
+            grid-area: 4 / 2 ;
+            
+        }
+        .six{
+            grid-area: 4 / 3 ;
+           
+        }
+        .multiply{
+            grid-area: 4 / 4 ;
+            
+        }
+        .one{
+            grid-area: 5 / 1 ;
+            
+        }
+        .two{
+            grid-area: 5 / 2 ;
+            
+        }
+       .three{
+        grid-area: 5 / 3 ;
+        
+       }
+       .minus{
+        grid-area: 5 / 4 ;
+        
+       }
+       .dot {
+        grid-area: 6 / 1;
+        
+       }
+       .zero {
+        grid-area: 6 / 2;
+       
+       }
+       .dblzero {
+        grid-area: 6 / 3;
+       
+       }
+       .plus {
+        grid-area: 6 / 4 / span 2 / span 1;
+        
+       }
+       .equal{
+        grid-area: 7 / 1 / span 1 / span 3;
+        
+       }
+      #extra7{
+        width: 90%;
+        /* height: 100%; */
+        border-radius: 5px;
+        padding: 18px;
+          text-align: right; 
+      }
+       
+    </style>
+</head>
+<body>
+   
+    <h1 style="text-align: center;">3D Calculator using HTML & CSS</h1>
+    <div class="container">
+        <div class="input items">
+            <input type="text" name="" id="extra7" name="extra7" onkeypress="return isNumber(event)">
+ <script type="text/javascript">
+        function isNumber(evt) {
+    evt = (evt) ? evt : window.event;
+    var charCode = (evt.which) ? evt.which : evt.keyCode;
+    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+        return false;
+    }
+    return true;
+}
+    </script>
+        </div>
+     <div class="items c">C </div>
+     <div class="items del">DEL </div>    
+     <div class="items  seven">7</div>
+     <div class="items  eight">8</div>
+     <div class="items  nine">9 </div>
+     <div class="items four">4 </div>
+     <div class="items five">5 </div>
+     <div class="items six">6 </div>
+     <div class="items three">3 </div>
+     <div class="items two">2</div>
+     <div class="items one">1</div>
+     <div class="items zero">0 </div>
+     <div class="items dblzero">00 </div>
+     <div class="items dot">. </div>
+     <div class="items div">/</div>
+     <div class="items minus">-</div>
+     <div class="items plus">+</div>
+     <div class="items multiply">*</div>
+     <div class="items equal">=</div>
+     
+       
+    </div>
+</body>
+</html>
