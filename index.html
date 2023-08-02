@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid in CSS</title>
+    <title>3D Calculator using HTML, CSS & Javascript by CODEWORK </title>
     <style>
         .container {
             display: grid;
@@ -16,13 +16,13 @@
 
         }
 
-        .container >div{
+        .container > div{
             background-color: rgba(255, 255, 255, 0.8);
             text-align: center;
             padding: 20px 0;
             font-size: 30px;
         }
-        
+       
         .items{
             border: 12px outset #bebeee;
         }
@@ -30,22 +30,22 @@
         .input{
         grid-area: 1 / 1 /span 1 / span 4;
        
-        
+       
        }
 
 
 
         .c {
             grid-area: 2 / 1 / span 1 / span 2;
-            
-            
-            
+           
+           
+           
         }
         .del{
             grid-area: 2 / 3 / span 1 / span 2;
-            
-            
-            
+           
+           
+           
         }
         .seven{
             grid-area: 3 / 1 ;
@@ -53,11 +53,11 @@
         }
         .eight{
             grid-area: 3 / 2 ;
-            
+           
         }
         .nine{
             grid-area: 3 / 3 ;
-            
+           
         }
         .div{
             grid-area: 3 / 4 ;
@@ -65,11 +65,11 @@
         }
         .four{
             grid-area: 4 / 1 ;
-            
+           
         }
         .five{
             grid-area: 4 / 2 ;
-            
+           
         }
         .six{
             grid-area: 4 / 3 ;
@@ -77,27 +77,27 @@
         }
         .multiply{
             grid-area: 4 / 4 ;
-            
+           
         }
         .one{
             grid-area: 5 / 1 ;
-            
+           
         }
         .two{
             grid-area: 5 / 2 ;
-            
+           
         }
        .three{
         grid-area: 5 / 3 ;
-        
+       
        }
        .minus{
         grid-area: 5 / 4 ;
-        
+       
        }
        .dot {
         grid-area: 6 / 1;
-        
+       
        }
        .zero {
         grid-area: 6 / 2;
@@ -109,25 +109,25 @@
        }
        .plus {
         grid-area: 6 / 4 / span 2 / span 1;
-        
+       
        }
        .equal{
         grid-area: 7 / 1 / span 1 / span 3;
-        
+       
        }
       #extra7{
         width: 90%;
         /* height: 100%; */
         border-radius: 5px;
         padding: 18px;
-          text-align: right; 
+          text-align: right;
       }
        
     </style>
 </head>
 <body>
    
-    <h1 style="text-align: center;">3D Calculator using HTML & CSS</h1>
+    <h1 style="text-align: center;">3D Calculator using HTML, CSS & Javascript</h1>
     <div class="container">
         <div class="input items">
             <input type="text" name="" id="extra7" name="extra7" onkeypress="return isNumber(event)">
@@ -141,26 +141,203 @@
     return true;
 }
     </script>
+
         </div>
-     <div class="items c">C </div>
-     <div class="items del">DEL </div>    
-     <div class="items  seven">7</div>
-     <div class="items  eight">8</div>
-     <div class="items  nine">9 </div>
-     <div class="items four">4 </div>
-     <div class="items five">5 </div>
-     <div class="items six">6 </div>
-     <div class="items three">3 </div>
-     <div class="items two">2</div>
-     <div class="items one">1</div>
-     <div class="items zero">0 </div>
-     <div class="items dblzero">00 </div>
-     <div class="items dot">. </div>
-     <div class="items div">/</div>
-     <div class="items minus">-</div>
-     <div class="items plus">+</div>
-     <div class="items multiply">*</div>
-     <div class="items equal">=</div>
+          <script type="text/javascript">
+        function clicked(x) {
+            if (x=='c') {
+            document.getElementById('c').style.border='12px inset #bebeee'
+           
+
+            setTimeout( function() { document.getElementById('c').style.border='12px outset #bebeee' }, 200);
+
+        }
+        else if (x=='del') {
+            document.getElementById('del').style.border='12px inset #bebeee'
+           
+
+            setTimeout( function() { document.getElementById('del').style.border='12px outset #bebeee' }, 200);
+
+        }
+         else if (x=='dblzero') {
+            document.getElementById('dblzero').style.border='12px inset #bebeee'
+           
+
+            setTimeout( function() { document.getElementById('dblzero').style.border='12px outset #bebeee' }, 200);
+
+        }
+         else if (x=='zero') {
+            document.getElementById('zero').style.border='12px inset #bebeee'
+           
+
+            setTimeout( function() { document.getElementById('zero').style.border='12px outset #bebeee' }, 200);
+
+        }
+         else if (x=='del') {
+            document.getElementById('del').style.border='12px inset #bebeee'
+           
+
+            setTimeout( function() { document.getElementById('del').style.border='12px outset #bebeee' }, 200);
+
+        }
+         else if (x=='one') {
+            document.getElementById('one').style.border='12px inset #bebeee'
+           
+
+            setTimeout( function() { document.getElementById('one').style.border='12px outset #bebeee' }, 200);
+
+        }
+         else if (x=='two') {
+            document.getElementById('two').style.border='12px inset #bebeee'
+           
+
+            setTimeout( function() { document.getElementById('two').style.border='12px outset #bebeee' }, 200);
+
+        }
+         else if (x=='three') {
+            document.getElementById('three').style.border='12px inset #bebeee'
+           
+
+            setTimeout( function() { document.getElementById('three').style.border='12px outset #bebeee' }, 200);
+
+        }
+         else if (x=='four') {
+            document.getElementById('four').style.border='12px inset #bebeee'
+           
+
+            setTimeout( function() { document.getElementById('four').style.border='12px outset #bebeee' }, 200);
+
+        }
+         else if (x=='five') {
+            document.getElementById('five').style.border='12px inset #bebeee'
+           
+
+            setTimeout( function() { document.getElementById('five').style.border='12px outset #bebeee' }, 200);
+
+        }
+         else if (x=='six') {
+            document.getElementById('six').style.border='12px inset #bebeee'
+           
+
+            setTimeout( function() { document.getElementById('six').style.border='12px outset #bebeee' }, 200);
+
+        }
+         else if (x=='seven') {
+            document.getElementById('seven').style.border='12px inset #bebeee'
+           
+
+            setTimeout( function() { document.getElementById('seven').style.border='12px outset #bebeee' }, 200);
+
+        }
+         else if (x=='eight') {
+            document.getElementById('eight').style.border='12px inset #bebeee'
+           
+
+            setTimeout( function() { document.getElementById('eight').style.border='12px outset #bebeee' }, 200);
+
+        }
+         else if (x=='nine') {
+            document.getElementById('nine').style.border='12px inset #bebeee'
+           
+
+            setTimeout( function() { document.getElementById('nine').style.border='12px outset #bebeee' }, 200);
+
+        }
+         else if (x=='ten') {
+            document.getElementById('ten').style.border='12px inset #bebeee'
+           
+
+            setTimeout( function() { document.getElementById('ten').style.border='12px outset #bebeee' }, 200);
+
+        }
+        else if (x=='ten') {
+            document.getElementById('ten').style.border='12px inset #bebeee'
+           
+
+            setTimeout( function() { document.getElementById('ten').style.border='12px outset #bebeee' }, 200);
+
+        }
+        else if (x=='ten') {
+            document.getElementById('ten').style.border='12px inset #bebeee'
+           
+
+            setTimeout( function() { document.getElementById('ten').style.border='12px outset #bebeee' }, 200);
+
+        }
+        else if (x=='dot') {
+            document.getElementById('dot').style.border='12px inset #bebeee'
+           
+
+            setTimeout( function() { document.getElementById('dot').style.border='12px outset #bebeee' }, 200);
+
+        }
+        else if (x=='div') {
+            document.getElementById('div').style.border='12px inset #bebeee'
+           
+
+            setTimeout( function() { document.getElementById('div').style.border='12px outset #bebeee' }, 200);
+
+        }
+        else if (x=='plus') {
+            document.getElementById('plus').style.border='12px inset #bebeee'
+           
+
+            setTimeout( function() { document.getElementById('plus').style.border='12px outset #bebeee' }, 200);
+
+        }
+        else if (x=='minus') {
+            document.getElementById('minus').style.border='12px inset #bebeee'
+           
+
+            setTimeout( function() { document.getElementById('minus').style.border='12px outset #bebeee' }, 200);
+
+        }
+         else if (x=='multiply') {
+            document.getElementById('multiply').style.border='12px inset #bebeee'
+           
+
+            setTimeout( function() { document.getElementById('multiply').style.border='12px outset #bebeee' }, 200);
+
+        }
+         else if (x=='equal') {
+            document.getElementById('equal').style.border='12px inset #bebeee'
+           
+
+            setTimeout( function() { document.getElementById('equal').style.border='12px outset #bebeee' }, 200);
+
+        }
+           }
+    </script>
+     <div class="items c" id="c" onclick="clicked('c')">C </div>
+
+
+     <div class="items del" id="del" onclick="clicked('del')">DEL </div>
+
+ 
+     <div class="items dblzero" id="dblzero" onclick="clicked('dblzero')">00 </div>
+   
+     <div class="items zero" id="zero" onclick="clicked('zero')">0 </div>
+
+      <div class="items one" id="one" onclick="clicked('one')">1</div>
+
+      <div class="items two" id="two" onclick="clicked('two')">2</div>
+      <div class="items three" id="three" onclick="clicked('three')">3 </div>
+   
+       <div class="items four" id="four" onclick="clicked('four')">4 </div>
+     <div class="items five" id="five" onclick="clicked('five')">5 </div>
+     <div class="items six" id="six" onclick="clicked('six')">6 </div>
+     
+     <div class="items  seven" id="seven" onclick="clicked('seven')">7</div>
+     <div class="items  eight" id="eight" onclick="clicked('eight')">8</div>
+     <div class="items  nine" id="nine" onclick="clicked('nine')">9 </div>
+   
+   
+     <div class="items dot" id="dot" onclick="clicked('dot')">. </div>
+     <div class="items div" id="div" onclick="clicked('div')">/</div>
+     <div class="items minus" id="minus" onclick="clicked('minus')">-</div>
+     <div class="items plus" id="plus" onclick="clicked('plus')">+</div>
+     <div class="items multiply" id="multiply" onclick="clicked('multiply')">*</div>
+     <div class="items equal" id="equal" onclick="clicked('equal')">=</div>
      
        
     </div>
