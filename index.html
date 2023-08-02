@@ -131,18 +131,21 @@
     <div class="container">
         <div class="input items">
             <input type="text" name="" id="extra7" name="extra7" onkeypress="return isNumber(event)">
- <script type="text/javascript">
-        function isNumber(evt) {
-    evt = (evt) ? evt : window.event;
-    var charCode = (evt.which) ? evt.which : evt.keyCode;
-    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
-        return false;
-    }
-    return true;
-}
-    </script>
+
+            <!-- below javascript code is to allow only numbers to be type on calculator screen -->
+                 <script type="text/javascript">
+                        function isNumber(evt) {
+                    evt = (evt) ? evt : window.event;
+                    var charCode = (evt.which) ? evt.which : evt.keyCode;
+                    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+                        return false;
+                    }
+                    return true;
+                }
+                    </script>
 
         </div>
+        <!-- below javascript code is to give button press 3d effect on div -->
           <script type="text/javascript">
         function clicked(x) {
             if (x=='c') {
