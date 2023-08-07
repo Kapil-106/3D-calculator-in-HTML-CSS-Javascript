@@ -9,7 +9,7 @@
             display: grid;
             grid-template-columns: auto auto auto auto ;
             grid-gap: 10px 10px;
-            background-color: #000080;
+            background-color: #1F51FF;
             padding: 20px;
             width: 50%;
             margin: auto;
@@ -115,7 +115,7 @@
         grid-area: 7 / 1 / span 1 / span 3;
        
        }
-      #extra7{
+      #input_output{
         width: 90%;
         /* height: 100%; */
         border-radius: 5px;
@@ -130,7 +130,7 @@
     <h1 style="text-align: center;">3D Calculator using HTML, CSS & Javascript</h1>
     <div class="container">
         <div class="input items">
-            <input type="text" name="" id="extra7" name="extra7" onkeypress="return isNumber(event)">
+            <input type="text"  id="input_output" name="input_output" onkeypress="return isNumber(event)">
 
             <!-- below javascript code is to allow only numbers to be type on calculator screen -->
                  <script type="text/javascript">
@@ -149,6 +149,8 @@
           <script type="text/javascript">
         function clicked(x) {
             if (x=='c') {
+
+                document.getElementById('input_output').value =''
             document.getElementById('c').style.border='12px inset #bebeee'
            
 
@@ -156,6 +158,8 @@
 
         }
         else if (x=='del') {
+
+             document.getElementById('input_output').value =(document.getElementById('input_output').value).slice(0,-1)
             document.getElementById('del').style.border='12px inset #bebeee'
            
 
@@ -163,6 +167,8 @@
 
         }
          else if (x=='dblzero') {
+
+            document.getElementById('input_output').value +='00'
             document.getElementById('dblzero').style.border='12px inset #bebeee'
            
 
@@ -170,6 +176,8 @@
 
         }
          else if (x=='zero') {
+
+            document.getElementById('input_output').value +=0
             document.getElementById('zero').style.border='12px inset #bebeee'
            
 
@@ -184,6 +192,8 @@
 
         }
          else if (x=='one') {
+
+            document.getElementById('input_output').value +=1
             document.getElementById('one').style.border='12px inset #bebeee'
            
 
@@ -191,6 +201,7 @@
 
         }
          else if (x=='two') {
+            document.getElementById('input_output').value +=2
             document.getElementById('two').style.border='12px inset #bebeee'
            
 
@@ -198,6 +209,7 @@
 
         }
          else if (x=='three') {
+            document.getElementById('input_output').value +=3
             document.getElementById('three').style.border='12px inset #bebeee'
            
 
@@ -205,6 +217,8 @@
 
         }
          else if (x=='four') {
+
+            document.getElementById('input_output').value +=4
             document.getElementById('four').style.border='12px inset #bebeee'
            
 
@@ -212,6 +226,8 @@
 
         }
          else if (x=='five') {
+
+            document.getElementById('input_output').value +=5
             document.getElementById('five').style.border='12px inset #bebeee'
            
 
@@ -219,6 +235,8 @@
 
         }
          else if (x=='six') {
+
+            document.getElementById('input_output').value +=6
             document.getElementById('six').style.border='12px inset #bebeee'
            
 
@@ -226,6 +244,8 @@
 
         }
          else if (x=='seven') {
+
+            document.getElementById('input_output').value +=7
             document.getElementById('seven').style.border='12px inset #bebeee'
            
 
@@ -233,6 +253,9 @@
 
         }
          else if (x=='eight') {
+
+
+            document.getElementById('input_output').value +=8
             document.getElementById('eight').style.border='12px inset #bebeee'
            
 
@@ -240,34 +263,18 @@
 
         }
          else if (x=='nine') {
+
+            document.getElementById('input_output').value +=9
             document.getElementById('nine').style.border='12px inset #bebeee'
            
 
             setTimeout( function() { document.getElementById('nine').style.border='12px outset #bebeee' }, 200);
 
         }
-         else if (x=='ten') {
-            document.getElementById('ten').style.border='12px inset #bebeee'
-           
-
-            setTimeout( function() { document.getElementById('ten').style.border='12px outset #bebeee' }, 200);
-
-        }
-        else if (x=='ten') {
-            document.getElementById('ten').style.border='12px inset #bebeee'
-           
-
-            setTimeout( function() { document.getElementById('ten').style.border='12px outset #bebeee' }, 200);
-
-        }
-        else if (x=='ten') {
-            document.getElementById('ten').style.border='12px inset #bebeee'
-           
-
-            setTimeout( function() { document.getElementById('ten').style.border='12px outset #bebeee' }, 200);
-
-        }
+        
         else if (x=='dot') {
+
+            document.getElementById('input_output').value +='.'
             document.getElementById('dot').style.border='12px inset #bebeee'
            
 
@@ -275,6 +282,8 @@
 
         }
         else if (x=='div') {
+
+            document.getElementById('input_output').value +='/'
             document.getElementById('div').style.border='12px inset #bebeee'
            
 
@@ -282,6 +291,7 @@
 
         }
         else if (x=='plus') {
+            document.getElementById('input_output').value +='+'
             document.getElementById('plus').style.border='12px inset #bebeee'
            
 
@@ -289,6 +299,8 @@
 
         }
         else if (x=='minus') {
+
+            document.getElementById('input_output').value +='-'
             document.getElementById('minus').style.border='12px inset #bebeee'
            
 
@@ -296,6 +308,8 @@
 
         }
          else if (x=='multiply') {
+
+            document.getElementById('input_output').value +='*'
             document.getElementById('multiply').style.border='12px inset #bebeee'
            
 
@@ -303,6 +317,9 @@
 
         }
          else if (x=='equal') {
+
+
+            document.getElementById('input_output').value = eval( document.getElementById('input_output').value) 
             document.getElementById('equal').style.border='12px inset #bebeee'
            
 
